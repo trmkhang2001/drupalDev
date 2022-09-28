@@ -1,14 +1,31 @@
 my_module_sugarConvert:
-  path: '/my_module/result/{conversion_type_input}/{number}/{conversion_type_output}'
+  path: '/my_module/sugar/{conversion_type_input}/{number}/{conversion_type_output}'
   defaults:
     _controller: '\Drupal\my_module\Controller\sugarConvertTo::sugarConvert'
   requirements:
     _permission: 'access content'
-
+my_module_honeyConvert:
+  path: '/my_module/honey/{conversion_type_input}/{number}/{conversion_type_output}'
+  defaults:
+    _controller: '\Drupal\my_module\Controller\honeyConvertTo::honeyConvert'
+  requirements:
+    _permission: 'access content'
+my_module_flourConvert:
+  path: '/my_module/flour/{conversion_type_input}/{number}/{conversion_type_output}'
+  defaults:
+    _controller: '\Drupal\my_module\Controller\flourConvertTo::flourConvert'
+  requirements:
+    _permission: 'access content'
+my_module_milkConvert:
+  path: '/my_module/milk/{conversion_type_input}/{number}/{conversion_type_output}'
+  defaults:
+    _controller: '\Drupal\my_module\Controller\milkConvertTo::milkConvert'
+  requirements:
+    _permission: 'access content'
 my_module.config_form:
   path: '/my_module'
   defaults:
     _form: '\Drupal\my_module\Form\MyConfigForm'
-    _title: 'Change Unit'
+    _title: 'ĐỔI ĐƠN VỊ'
   requirements:
     _permission: 'administer content'

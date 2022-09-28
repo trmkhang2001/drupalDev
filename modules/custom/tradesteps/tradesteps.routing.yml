@@ -1,0 +1,7 @@
+tradesteps.my_form_ajax:
+  path: '/formajax'
+  defaults:
+    _form: 'Drupal\tradesteps\Form\MyFormAjax{'
+    _title: 'My Form Ajax'
+  requirements:
+    _permission: 'access content'

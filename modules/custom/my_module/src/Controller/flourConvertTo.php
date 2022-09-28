@@ -4,11 +4,11 @@ namespace Drupal\my_module\Controller;
 
 use Drupal\Core\Render\Element\Value;
 
-class sugarConvertTo{
+class flourConvertTo{
     public static $unit = array (
-        "cup" => "194.7121",
-        "tbsp" => "12.1695",
-        "tsp" => "4.0565",
+        "cup" => "125.1552",
+        "tbsp" => "7.8222",
+        "tsp" => "2.6074",
         "kg" => "1000",
         "oz"=> "28.3495",
         "lb"=> "453.5924",
@@ -27,9 +27,9 @@ class sugarConvertTo{
             }
         }
     }
-    public static function sugarConvert($conversion_type_input,$number,$conversion_type_output){
-        $number_output = sugarConvertTo::convertTo($conversion_type_input,$number);
-        $result = sugarConvertTo::revertTo($conversion_type_output,$number_output);
+    public static function flourConvert($conversion_type_input,$number,$conversion_type_output){
+        $number_output = flourConvertTo::convertTo($conversion_type_input,$number);
+        $result = flourConvertTo::revertTo($conversion_type_output,$number_output);
         return $result;
     }
 }
